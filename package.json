@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "@aws-cdk/aws-apigateway": "^1.204.0",
-    "@aws-cdk/aws-lambda": "^1.204.0",
-    "aws-cdk": "^2.137.0",
-    "aws-cdk-lib": "^2.137.0"
-  }
-}
