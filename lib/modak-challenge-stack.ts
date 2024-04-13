@@ -10,15 +10,15 @@ export class ModakChallengeStack extends cdk.Stack {
     const customRuntime = new lambda.Runtime('provided.al2023', lambda.RuntimeFamily.GO)
 
     //Create Lambda Function
-    const helloLambda = new lambda.Function(this, 'Modak Function', {
+    const helloLambda = new lambda.Function(this, 'HelloLambda', {
       runtime: customRuntime,
       code: lambda.Code.fromAsset('function.zip'),
       handler: 'main',
     });
 
     //Create API Gateway
-    const api = new apigateway.RestApi(this, 'Modak Api', {
-      restApiName: 'Modak API',
+    const api = new apigateway.RestApi(this, 'MyApi', {
+      restApiName: 'My API',
     });
 
     //Create GET method and integrate with Lambda Function
