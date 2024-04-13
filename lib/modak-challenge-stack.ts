@@ -1,6 +1,6 @@
 import * as cdk from '@aws-cdk/core';
 import * as lambda from '@aws-cdk/aws-lambda';
-import * as apigateway from '@aws-cdk/aws-apigateway'
+import * as apigateway from '@aws-cdk/aws-apigateway';
 
 export class ModakChallengeStack extends cdk.Stack {
   constructor(app: cdk.App, id: string, props?: cdk.StackProps) {
