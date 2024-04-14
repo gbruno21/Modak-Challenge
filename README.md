@@ -3,7 +3,7 @@ What I did:
 - Install packages (npm install @aws-cdk/aws-lambda @aws-cdk/aws-apigateway)
 - Init Go module (go mod init Modak-Challenge)
 - Install go packages (go get github.com/aws/aws-lambda-go/lambda / go get github.com/aws/aws-lambda-go/events)
-- Create compile and zip .go file
+- Create compile and zip .go file and bootstrap file together (zip function.zip main bootstrap)
 - Edit lib/modak-challenge-stack.ts with our stack
 - Edit bin/modak-challenge.ts to use @aws-cdk/core package
 - Export credentials
